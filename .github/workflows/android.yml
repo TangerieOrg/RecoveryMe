@@ -86,11 +86,11 @@ jobs:
           fi
 
       - name: Rename APK
-        run: mv android/app/build/outputs/apk/release/app-release.apk "recovery-me-$GITHUB_REF_NAME.apk"
+        run: mv android/app/build/outputs/apk/release/app-release.apk "recoveryme-$GITHUB_REF_NAME.apk"
 
       - uses: softprops/action-gh-release@v2
         with:
-          files: recovery-me-${{ github.ref_name }}.apk
+          files: recoveryme-${{ github.ref_name }}.apk
           fail_on_unmatched_files: true
 
       # The runner is persistent, so don't leave the key lying around

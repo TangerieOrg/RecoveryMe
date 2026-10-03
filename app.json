@@ -1,12 +1,12 @@
 {
   "expo": {
     "name": "Recovery Me",
-    "slug": "recovery-me",
-    "scheme": "recovery-me",
+    "slug": "recoveryme",
+    "scheme": "recoveryme",
     "userInterfaceStyle": "automatic",
     "orientation": "default",
     "android": {
-      "package": "com.tangerie.recovery-me",
+      "package": "com.tangerie.recoveryme",
       "blockedPermissions": [
         "android.permission.ACCESS_FINE_LOCATION"
       ]

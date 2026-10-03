@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "Recovery Me",
+    "slug": "recovery-me",
+    "scheme": "recovery-me",
+    "userInterfaceStyle": "automatic",
+    "orientation": "default",
+    "android": {
+      "package": "com.tangerie.recovery-me",
+      "blockedPermissions": [
+        "android.permission.ACCESS_FINE_LOCATION"
+      ]
+    },
+    "web": {
+      "output": "single"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "headers": {
+            "Cross-Origin-Embedder-Policy": "credentialless",
+            "Cross-Origin-Opener-Policy": "same-origin"
+          }
+        }
+      ],
+      "expo-status-bar",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "RecoveryMe uses your approximate location to aid in location suggestions."
+        }
+      ],
+      "expo-sqlite",
+      "expo-notifications",
+      "@react-native-community/datetimepicker",
+      "./plugins/withReleaseSigning"
+    ]
+  }
+}
